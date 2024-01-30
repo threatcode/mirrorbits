@@ -72,6 +72,11 @@ func (g *GeoIP) openDatabase(file string) (*maxminddb.Reader, error) {
 
 	if _, err = os.Stat(filename + geoipUpdatedExt); !os.IsNotExist(err) {
 		filename += geoipUpdatedExt
+	} else {
+		fi, err = os.Stat(filename)
+		if err != nil {
+			return nil, time.Time{}, err
+		}
 	}
 
 	return maxminddb.Open(filename)
