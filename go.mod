@@ -13,8 +13,7 @@ require (
 	github.com/rafaeljusto/redigomock v0.0.0-20190202135759-257e089e14a1
 	github.com/stretchr/testify v1.4.0 // indirect
 	github.com/youtube/vitess v0.0.0-20181105031612-54855ec7b369
-	golang.org/x/net v0.0.0-20220722155237-a158d28d115b
-	golang.org/x/text v0.3.8 // indirect
+	golang.org/x/net v0.17.0
 	google.golang.org/genproto v0.0.0-20190911173649-1774047e7e51 // indirect
 	google.golang.org/grpc v1.23.1
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
